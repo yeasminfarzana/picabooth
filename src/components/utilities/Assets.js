@@ -1,4 +1,5 @@
 // Import frames
+import classic from "../assets/frames/classic.png";
 import black from "../assets/frames/black.png";
 import blue from "../assets/frames/blue.png";
 import green from "../assets/frames/green.png";
@@ -14,6 +15,7 @@ import picaboo from "../assets/stickers/picaboo.png";
 import picahohoho from "../assets/stickers/picahohoho.png";
 
 export const frame_images = [
+  { title: "Classic", image: classic },
   { title: "Black", image: black },
   { title: "Blue", image: blue },
   { title: "Green", image: green },

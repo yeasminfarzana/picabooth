@@ -3,15 +3,20 @@ import frame_default from "../assets/frame_default.png";
 import { getCapturedImages } from "../utilities/ImageStore";
 import { frame_images } from "../utilities/Assets";
 import { frame_stickers } from "../utilities/Assets";
+import { useState } from "react";
 
 function Customize() {
   const imageList = getCapturedImages();
+
+  const [selectedFrame, setSelectedFrame] = useState(frame_images[0]);
+  const handleFrame = (frame) => {
+    setSelectedFrame(frame);
+  };
+
   return (
     <div className="container3">
-      <div className="framedefault">
-        <a>
-          <img src={frame_default} alt="Frame" id="frame_d" />
-        </a>
+      <div className="polaroid">
+        <img src={selectedFrame.image} className="frame"></img>
       </div>
       <div className="scroll_menus">
         <p>Filter</p>
@@ -35,17 +40,20 @@ function Customize() {
             Vivo
           </a>
         </div>
-        <p>Colour</p>
+        <p>Frame</p>
         <div className="scrollfilter">
-          {frame_images.map((image) => (
-            <a className="colour">{image.title}</a>
+          {frame_images.map((frame) => (
+            <a className="colour" onClick={() => handleFrame(frame)}>
+              {frame.title}
+            </a>
           ))}
         </div>
-        <p>Stickers</p>
+        <p>Sticker</p>
         <div className="scrollfilter">
           {frame_stickers.map((image) => (
             <a className="sticker">{image.title}</a>
           ))}
+          <a className="sticker">None</a>
         </div>
         <a className="Download" href="#download" id="download">
           Download
