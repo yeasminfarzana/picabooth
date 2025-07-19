@@ -1,0 +1,13 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Asap Symbol";
+  color: whitesmoke;
+  font-size: 30px;
+  width: 130px;
+  height: 55px;
+  background-color: rgb(137, 143, 174);
+  border: 3px solid rgb(99, 107, 149);
+  border-radius: 2rem;
+}
