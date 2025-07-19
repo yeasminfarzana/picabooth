@@ -1,6 +1,8 @@
 import "./Customize.css";
 import frame_default from "../assets/frame_default.png";
 import { getCapturedImages } from "../utilities/ImageStore";
+import { frame_images } from "../utilities/Assets";
+import { frame_stickers } from "../utilities/Assets";
 
 function Customize() {
   const imageList = getCapturedImages();
@@ -35,60 +37,15 @@ function Customize() {
         </div>
         <p>Colour</p>
         <div className="scrollfilter">
-          <a className="colour" href="#black">
-            Black
-          </a>
-          <a className="colour" href="#white">
-            White
-          </a>
-          <a className="colour" href="#red">
-            Red
-          </a>
-          <a className="colour" href="#orange">
-            Orange
-          </a>
-          <a className="colour" href="#yellow">
-            Yellow
-          </a>
-          <a className="colour" href="#green">
-            Green
-          </a>
-          <a className="colour" href="#blue">
-            Blue
-          </a>
-          <a className="colour" href="#violet">
-            Violet
-          </a>
-          <a className="colour" href="#pink">
-            Pink
-          </a>
+          {frame_images.map((image) => (
+            <a className="colour">{image.title}</a>
+          ))}
         </div>
         <p>Stickers</p>
         <div className="scrollfilter">
-          <a className="sticker" href="#red">
-            Red Heart
-          </a>
-          <a className="sticker" href="#purple">
-            Purple Heart
-          </a>
-          <a className="sticker" href="#moon">
-            Moon
-          </a>
-          <a className="sticker" href="#skull">
-            Skull
-          </a>
-          <a className="sticker" href="#ghost">
-            Ghost
-          </a>
-          <a className="sticker" href="#hat">
-            Witch Hat
-          </a>
-          <a className="sticker" href="#blue">
-            Blue
-          </a>
-          <a className="sticker" href="#rose">
-            Rose
-          </a>
+          {frame_stickers.map((image) => (
+            <a className="sticker">{image.title}</a>
+          ))}
         </div>
         <a className="Download" href="#download" id="download">
           Download
