@@ -4,14 +4,21 @@
   overflow: hidden;
   background-color: rgb(245, 245, 244);
   padding: 20px 0 20px 0;
+  gap: 20px;
 }
 
 .polaroid {
-}
-
-.frame {
+  display: grid;
   width: 290px;
   height: 740px;
+}
+
+.frame,
+.sticker {
+  width: 290px;
+  height: 740px;
+  grid-area: 1/1;
+  position: absolute;
 }
 
 .scrollfilter {
@@ -35,7 +42,7 @@
 
 .filter,
 .colour,
-.sticker {
+.stickerButton {
   display: inline-block;
   border: 2px solid rgb(99, 107, 149);
   background-color: rgb(226, 228, 235);

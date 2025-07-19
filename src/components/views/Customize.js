@@ -13,10 +13,18 @@ function Customize() {
     setSelectedFrame(frame);
   };
 
+  const [selectedSticker, setSelectedSticker] = useState(null);
+  const handleSticker = (sticker) => {
+    setSelectedSticker(sticker);
+  };
+
   return (
     <div className="container3">
       <div className="polaroid">
         <img src={selectedFrame.image} className="frame"></img>
+        {selectedSticker ? (
+          <img src={selectedSticker.image} className="sticker"></img>
+        ) : null}
       </div>
       <div className="scroll_menus">
         <p>Filter</p>
@@ -50,10 +58,14 @@ function Customize() {
         </div>
         <p>Sticker</p>
         <div className="scrollfilter">
-          {frame_stickers.map((image) => (
-            <a className="sticker">{image.title}</a>
+          {frame_stickers.map((sticker) => (
+            <a className="stickerButton" onClick={() => handleSticker(sticker)}>
+              {sticker.title}
+            </a>
           ))}
-          <a className="sticker">None</a>
+          <a className="stickerButton" onClick={() => handleSticker(null)}>
+            None
+          </a>
         </div>
         <a className="Download" href="#download" id="download">
           Download
