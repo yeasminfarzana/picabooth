@@ -54,9 +54,9 @@ export function FilteredImage({ imageUrl, filter }) {
   }, [image, filter]);
 
   return (
-    <Stage width={218} height={152}>
+    <Stage width={221} height={154}>
       <Layer>
-        <Image ref={imageRef} image={image} width={218} height={152}></Image>
+        <Image ref={imageRef} image={image} width={221} height={154}></Image>
       </Layer>
     </Stage>
   );

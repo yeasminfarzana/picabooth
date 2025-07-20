@@ -2,12 +2,14 @@ import "./Customize.css";
 import { getCapturedImages } from "../utilities/ImageStore";
 import { frame_images } from "../utilities/Assets";
 import { frame_stickers } from "../utilities/Assets";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FilteredImage } from "../utilities/FilteredImage";
 import { filter_options } from "../utilities/Assets";
+import html2canvas from "html2canvas";
 
 function Customize() {
   const imageList = getCapturedImages();
+  const polaroidRef = useRef(null);
   const [selectedFrame, setSelectedFrame] = useState(frame_images[0]);
   const handleFrame = (frame) => {
     setSelectedFrame(frame);
@@ -23,13 +25,24 @@ function Customize() {
     setSelectedFilter(filter);
   };
 
+  const downloadImage = () => {
+    html2canvas(polaroidRef.current, {
+      useCORS: true,
+    }).then((canvas) => {
+      const link = document.createElement("a");
+      link.download = "polaroid.png";
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    });
+  };
+
   return (
     <div className="container3">
-      <div className="polaroid">
+      <div ref={polaroidRef} className="polaroid">
         <img src={selectedFrame.image} className="frame"></img>
         <div className="pictures">
           {imageList.map((image) => (
-            <div className="picture">
+            <div className="picture ">
               <FilteredImage
                 imageUrl={image}
                 filter={selectedFilter}
@@ -73,9 +86,9 @@ function Customize() {
             None
           </a>
         </div>
-        <a className="Download" href="#download" id="download">
+        <button className="Download" onClick={() => downloadImage()}>
           Download
-        </a>
+        </button>
       </div>
     </div>
   );
