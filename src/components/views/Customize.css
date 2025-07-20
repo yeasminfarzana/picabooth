@@ -21,6 +21,18 @@
   position: absolute;
 }
 
+.picture {
+  position: relative;
+  width: 218px;
+  height: 149px;
+  margin-left: 36.5px;
+  margin-bottom: 15px;
+}
+
+.pictures {
+  margin-top: 23px;
+}
+
 .scrollfilter {
   max-width: 600px;
   border-color: rgb(99, 107, 149);

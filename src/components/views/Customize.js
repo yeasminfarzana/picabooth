@@ -1,5 +1,4 @@
 import "./Customize.css";
-import frame_default from "../assets/frame_default.png";
 import { getCapturedImages } from "../utilities/ImageStore";
 import { frame_images } from "../utilities/Assets";
 import { frame_stickers } from "../utilities/Assets";
@@ -22,6 +21,11 @@ function Customize() {
     <div className="container3">
       <div className="polaroid">
         <img src={selectedFrame.image} className="frame"></img>
+        <div className="pictures">
+          {imageList.map((image) => (
+            <img src={image} className="picture"></img>
+          ))}
+        </div>
         {selectedSticker ? (
           <img src={selectedSticker.image} className="sticker"></img>
         ) : null}
@@ -56,6 +60,7 @@ function Customize() {
             </a>
           ))}
         </div>
+
         <p>Sticker</p>
         <div className="scrollfilter">
           {frame_stickers.map((sticker) => (
