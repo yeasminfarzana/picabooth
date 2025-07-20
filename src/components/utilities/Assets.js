@@ -35,7 +35,7 @@ export const frame_stickers = [
 export const filter_options = [
   { title: "Black & White", value: "blackandwhite" },
   { title: "Seppia", value: "seppia" },
-  { title: "Polarizing", value: "polarizing" },
-  { title: "UV", value: "uv" },
+  { title: "Brighten", value: "bright" },
+  { title: "Vintage", value: "vintage" },
   { title: "None", value: null },
 ];
