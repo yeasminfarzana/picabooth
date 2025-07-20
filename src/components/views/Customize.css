@@ -23,14 +23,12 @@
 
 .picture {
   position: relative;
-  width: 218px;
-  height: 152px;
   margin-left: 36.5px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .pictures {
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 .scrollfilter {
@@ -52,7 +50,7 @@
   justify-content: space-evenly;
 }
 
-.filter,
+.filterButton,
 .colour,
 .stickerButton {
   display: inline-block;

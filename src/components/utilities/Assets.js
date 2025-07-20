@@ -31,3 +31,11 @@ export const frame_stickers = [
   { title: "Picaboo", image: picaboo },
   { title: "Picahohoho", image: picahohoho },
 ];
+
+export const filter_options = [
+  { title: "Black & White", value: "blackandwhite" },
+  { title: "Seppia", value: "seppia" },
+  { title: "Polarizing", value: "polarizing" },
+  { title: "UV", value: "uv" },
+  { title: "None", value: null },
+];

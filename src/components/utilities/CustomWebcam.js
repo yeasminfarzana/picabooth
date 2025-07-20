@@ -7,7 +7,9 @@ const CustomWebcam = ({ captureRequest }) => {
   const [imgList, setImgList] = useState([]); // initialize image
 
   const capture = useCallback(() => {
-    const newImgSrc = webcamRef.current.getScreenshot();
+    const newImgSrc = webcamRef.current.getScreenshot({
+      mimeType: "image/png",
+    });
     setImgList((prevList) => [...prevList, newImgSrc]);
   }, [webcamRef]);
 

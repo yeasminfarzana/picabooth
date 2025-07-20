@@ -3,10 +3,11 @@ import { getCapturedImages } from "../utilities/ImageStore";
 import { frame_images } from "../utilities/Assets";
 import { frame_stickers } from "../utilities/Assets";
 import { useState } from "react";
+import { FilteredImage } from "../utilities/FilteredImage";
+import { filter_options } from "../utilities/Assets";
 
 function Customize() {
   const imageList = getCapturedImages();
-
   const [selectedFrame, setSelectedFrame] = useState(frame_images[0]);
   const handleFrame = (frame) => {
     setSelectedFrame(frame);
@@ -17,13 +18,23 @@ function Customize() {
     setSelectedSticker(sticker);
   };
 
+  const [selectedFilter, setSelectedFilter] = useState(null);
+  const handleFilter = (filter) => {
+    setSelectedFilter(filter);
+  };
+
   return (
     <div className="container3">
       <div className="polaroid">
         <img src={selectedFrame.image} className="frame"></img>
         <div className="pictures">
           {imageList.map((image) => (
-            <img src={image} className="picture"></img>
+            <div className="picture">
+              <FilteredImage
+                imageUrl={image}
+                filter={selectedFilter}
+              ></FilteredImage>
+            </div>
           ))}
         </div>
         {selectedSticker ? (
@@ -33,24 +44,14 @@ function Customize() {
       <div className="scroll_menus">
         <p>Filter</p>
         <div className="scrollfilter">
-          <a className="filter" href="#normal">
-            Normal
-          </a>
-          <a className="filter" href="#blackwhite">
-            Black & White
-          </a>
-          <a className="filter" href="#seppia">
-            Seppia
-          </a>
-          <a className="filter" href="#polar">
-            Polarizing
-          </a>
-          <a className="filter" href="#uv">
-            UV
-          </a>
-          <a className="filter" href="#vivo">
-            None
-          </a>
+          {filter_options.map((filter) => (
+            <a
+              className="filterButton"
+              onClick={() => handleFilter(filter.value)}
+            >
+              {filter.title}
+            </a>
+          ))}
         </div>
         <p>Frame</p>
         <div className="scrollfilter">
