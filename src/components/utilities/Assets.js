@@ -16,14 +16,14 @@ import picahohoho from "../assets/stickers/picahohoho.png";
 
 export const frame_images = [
   { title: "Classic", image: classic },
-  { title: "Black", image: black },
-  { title: "Blue", image: blue },
-  { title: "Green", image: green },
-  { title: "Orange", image: orange },
   { title: "Red", image: red },
-  { title: "Violet", image: violet },
-  { title: "White", image: white },
+  { title: "Orange", image: orange },
   { title: "Yellow", image: yellow },
+  { title: "Green", image: green },
+  { title: "Blue", image: blue },
+  { title: "Violet", image: violet },
+  { title: "Black", image: black },
+  { title: "White", image: white },
 ];
 
 export const frame_stickers = [

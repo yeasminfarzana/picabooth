@@ -49,7 +49,7 @@ function Customize() {
             UV
           </a>
           <a className="filter" href="#vivo">
-            Vivo
+            None
           </a>
         </div>
         <p>Frame</p>
