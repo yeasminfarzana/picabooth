@@ -4,7 +4,7 @@
   overflow: hidden;
   background-color: rgb(245, 245, 244);
   padding: 20px 0 20px 0;
-  gap: 20px;
+  gap: 80px;
 }
 
 .polaroid {
@@ -67,7 +67,13 @@
 }
 
 .iconTitle {
-  background-color: red;
+  border: 3px solid rgb(226, 228, 235);
+  background-color: rgb(99, 107, 149);
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 5px;
+  font-family: "Asap Symbol";
 }
 
 /*.filterButton,
@@ -87,15 +93,18 @@ div.scrollfilter a:hover {
   background-color: rgb(99, 107, 149);
 }
 
-.scroll_menus > p {
+.scroll_menus p {
+  margin: auto 150px;
+}
+/*.scroll_menus p {
   font-family: "Asap Symbol";
   color: whitesmoke;
-  margin: auto 250px;
+  margin: auto 150px;
   border-radius: 2rem;
   background-color: rgb(99, 107, 149);
   text-align: center;
   padding: 5px 0 5px 0;
-}
+}*/
 
 .Download {
   font-family: "Asap Symbol";

@@ -19,12 +19,16 @@
 .textbox {
   font-family: "Asap Symbol";
   max-width: 400px;
-  font-size: 20px;
   text-align: center;
   margin-top: 90px;
   line-height: 1.7;
   font-weight: 600;
-  font-size: 20px;
+}
+
+input[id="name"],
+input[id="email"],
+input[id="input_message"] {
+  font-size: 16px;
 }
 
 .support > p {
@@ -32,7 +36,7 @@
 }
 
 strong {
-  font-family: "Antonio";
+  font-size: 30px;
 }
 
 .group {

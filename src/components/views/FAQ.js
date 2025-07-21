@@ -15,10 +15,9 @@ function FAQ() {
           <li>
             <div className="questions">How does it work?</div>
             <br></br>Simply click on the camera icon and a countdown of 3
-            seconds will start. Be ready to strike your best pose as the four
-            pictures will be taken one after another! Next, choose any filter,
-            frame or stickers to customize your pictures. Download to save
-            memories of a lifetime in your device.
+            seconds will start for each picture. Next, choose any filter, frame
+            or stickers to customize your pictures. Download to save memories of
+            a lifetime in your device!
           </li>
           <li>
             <div className="questions">Can I customize my photos?</div>
