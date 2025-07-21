@@ -55,7 +55,7 @@ function Customize() {
         ) : null}
       </div>
       <div className="scroll_menus">
-        <p>Filter</p>
+        <p className="iconTitle">Filter</p>
         <div className="scrollfilter">
           {filter_options.map((filter) => (
             <a
@@ -66,16 +66,16 @@ function Customize() {
             </a>
           ))}
         </div>
-        <p>Frame</p>
+        <p className="iconTitle">Frame</p>
         <div className="scrollfilter">
           {frame_images.map((frame) => (
-            <a className="colour" onClick={() => handleFrame(frame)}>
+            <a className="frameButton" onClick={() => handleFrame(frame)}>
               {frame.title}
             </a>
           ))}
         </div>
 
-        <p>Sticker</p>
+        <p className="iconTitle">Sticker</p>
         <div className="scrollfilter">
           {frame_stickers.map((sticker) => (
             <a className="stickerButton" onClick={() => handleSticker(sticker)}>

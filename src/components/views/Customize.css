@@ -32,6 +32,15 @@
 }
 
 .scrollfilter {
+  border: 2px solid rgb(99, 107, 149);
+  border-color: rgb(99, 107, 149);
+  border-width: 3px;
+  background-color: rgb(137, 143, 174);
+  border-radius: 0.5em;
+  overflow-y: auto;
+}
+
+/*.scrollfilter {
   max-width: 600px;
   border-color: rgb(99, 107, 149);
   border-width: 200px;
@@ -42,16 +51,27 @@
   white-space: nowrap;
   scrollbar-color: rgb(99, 107, 149);
   scrollbar-width: thin;
-}
+}*/
 
 .scroll_menus {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 10px;
 }
 
 .filterButton,
-.colour,
+.frameButton,
+.stickerButton {
+  border-style: none;
+}
+
+.iconTitle {
+  background-color: red;
+}
+
+/*.filterButton,
+.frameButton,
 .stickerButton {
   display: inline-block;
   border: 2px solid rgb(99, 107, 149);
@@ -61,7 +81,7 @@
   color: black;
   font-family: sans-serif;
   border-right-style: none;
-}
+}*/
 
 div.scrollfilter a:hover {
   background-color: rgb(99, 107, 149);
@@ -77,12 +97,14 @@ div.scrollfilter a:hover {
   padding: 5px 0 5px 0;
 }
 
-button {
+.Download {
   font-family: "Asap Symbol";
   color: whitesmoke;
   height: 35px;
   width: 150px;
   background-color: rgb(99, 107, 149);
+  border: 2px solid rgb(137, 143, 174);
+  border-width: 3px;
   border-radius: 2rem;
   display: block;
   margin-left: auto;
@@ -90,4 +112,11 @@ button {
   margin-top: 50px;
   text-align: center;
   font-size: 22px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.Download:hover {
+  background-color: rgb(137, 143, 174);
+  color: white;
 }
