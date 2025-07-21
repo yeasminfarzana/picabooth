@@ -25,6 +25,10 @@
   font-weight: 600;
 }
 
+label {
+  font-family: "Asap Symbol";
+}
+
 input[id="name"],
 input[id="email"],
 input[id="input_message"] {
