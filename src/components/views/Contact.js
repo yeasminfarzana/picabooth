@@ -10,7 +10,7 @@ function Contact() {
             If you have any issues, concerns or suggestions, please feel free to
             use the contact form. Alternatively, you can reach us via email at:{" "}
             <br></br>
-            <strong>picabooth_support@gmail.com</strong>
+            <strong>picabooth.contact@gmail.com</strong>
           </p>
         </div>
         <div className="group">
