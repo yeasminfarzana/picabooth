@@ -19,11 +19,13 @@
   background-color: rgb(137, 143, 174);
   border-radius: 2%;
 }
+
 video {
   width: 100%;
   height: 100%;
   margin-top: 20px;
 }
+
 #camerapic {
   border-radius: 2rem;
   max-width: 150px;

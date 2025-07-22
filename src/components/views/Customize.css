@@ -40,19 +40,6 @@
   overflow-y: auto;
 }
 
-/*.scrollfilter {
-  max-width: 600px;
-  border-color: rgb(99, 107, 149);
-  border-width: 200px;
-  background-color: rgb(137, 143, 174);
-  border-radius: 0.5em;
-  border: 2px solid;
-  overflow-y: auto;
-  white-space: nowrap;
-  scrollbar-color: rgb(99, 107, 149);
-  scrollbar-width: thin;
-}*/
-
 .scrollMenus {
   display: flex;
   flex-direction: column;
@@ -76,19 +63,6 @@
   font-family: "Asap Symbol";
 }
 
-/*.filterButton,
-.frameButton,
-.stickerButton {
-  display: inline-block;
-  border: 2px solid rgb(99, 107, 149);
-  background-color: rgb(226, 228, 235);
-  text-align: center;
-  padding: 14px;
-  color: black;
-  font-family: sans-serif;
-  border-right-style: none;
-}*/
-
 div.scrollfilter a:hover {
   background-color: rgb(99, 107, 149);
 }
@@ -96,15 +70,6 @@ div.scrollfilter a:hover {
 .scroll_menus p {
   margin: auto 150px;
 }
-/*.scroll_menus p {
-  font-family: "Asap Symbol";
-  color: whitesmoke;
-  margin: auto 150px;
-  border-radius: 2rem;
-  background-color: rgb(99, 107, 149);
-  text-align: center;
-  padding: 5px 0 5px 0;
-}*/
 
 .Download {
   font-family: "Asap Symbol";
