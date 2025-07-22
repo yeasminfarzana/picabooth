@@ -47,3 +47,22 @@ a {
   justify-content: flex-start;
   padding-top: 15px;
 }
+
+@media (max-width: 725px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo {
+    width: 170px;
+  }
+
+  .headerRight {
+    flex-direction: column;
+    margin: auto;
+  }
+}
