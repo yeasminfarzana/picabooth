@@ -39,13 +39,3 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
-
-@media (max-width: 725px) {
-  .homePic {
-    width: 400px;
-  }
-
-  #start {
-    margin-bottom: 40px;
-  }
-}
