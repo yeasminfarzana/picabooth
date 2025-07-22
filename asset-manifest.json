@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/picabooth/static/css/main.ced56d0e.css",
-    "main.js": "/picabooth/static/js/main.aad627ee.js",
+    "main.css": "/picabooth/static/css/main.d5cda798.css",
+    "main.js": "/picabooth/static/js/main.1ae4d814.js",
     "static/js/453.7bf9c778.chunk.js": "/picabooth/static/js/453.7bf9c778.chunk.js",
     "static/media/camerapic.png": "/picabooth/static/media/camerapic.372e0439c6159241409b.png",
     "static/media/logo.png": "/picabooth/static/media/logo.aab208d98edcb2702ed3.png",
@@ -10,12 +10,12 @@
     "static/media/picaboo.png": "/picabooth/static/media/picaboo.50639d70e13b62accdaa.png",
     "static/media/picachu.png": "/picabooth/static/media/picachu.8da5d30b43c9f03e7b0c.png",
     "index.html": "/picabooth/index.html",
-    "main.ced56d0e.css.map": "/picabooth/static/css/main.ced56d0e.css.map",
-    "main.aad627ee.js.map": "/picabooth/static/js/main.aad627ee.js.map",
+    "main.d5cda798.css.map": "/picabooth/static/css/main.d5cda798.css.map",
+    "main.1ae4d814.js.map": "/picabooth/static/js/main.1ae4d814.js.map",
     "453.7bf9c778.chunk.js.map": "/picabooth/static/js/453.7bf9c778.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ced56d0e.css",
-    "static/js/main.aad627ee.js"
+    "static/css/main.d5cda798.css",
+    "static/js/main.1ae4d814.js"
   ]
 }
