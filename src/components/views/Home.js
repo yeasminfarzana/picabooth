@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   return (
-    <div className="container">
+    <div className="containerHome">
       <h2>Slice of life in a pocket size</h2>
-      <div className="homepic_container">
+      <div className="containerHomepic">
         <img src={Homepic} className="homePic" alt="click" id="click" />
       </div>
 

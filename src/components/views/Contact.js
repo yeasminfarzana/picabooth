@@ -2,8 +2,8 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <div className="container5">
-      <h2 id="contact_us">Contact Us</h2>
+    <div className="containerContact">
+      <h2 id="contactUs">Contact Us</h2>
       <div className="support">
         <div className="textbox">
           <p>
@@ -25,9 +25,9 @@ function Contact() {
             <label for="email">Your Email</label>
             <input type="email" id="email" name="email" required></input>
             <label for="message_lab">Your Message</label>
-            <textarea id="input_message" name="message" required></textarea>
+            <textarea id="inputMessage" name="message" required></textarea>
             <div className="sub_button">
-              <input type="submit" value="Submit" id="submit_button"></input>
+              <input type="submit" value="Submit" id="submitButton"></input>
             </div>
           </form>
         </div>

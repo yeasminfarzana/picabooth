@@ -2,9 +2,9 @@ import "./FAQ.css";
 
 function FAQ() {
   return (
-    <div className="container4">
+    <div className="containerFAQ">
       <div className="QA">
-        <h2 class="faq_title">FAQs</h2>
+        <h2 class="faqTitle">FAQs</h2>
         <ul>
           <li>
             <div className="questions">What is PicABooth?</div>

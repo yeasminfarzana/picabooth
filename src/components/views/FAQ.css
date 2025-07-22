@@ -1,7 +1,8 @@
-.container4 {
+.containerFAQ {
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  margin: 20px;
 }
 
 .QA {
@@ -20,12 +21,7 @@ li {
   margin-top: 30px;
 }
 
-.container5 {
-  display: flex;
-  justify-content: center;
-}
-
-.faq_title {
+.faqTitle {
   font-family: "Antonio";
   letter-spacing: 0.5px;
 }

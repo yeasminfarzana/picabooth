@@ -9,12 +9,12 @@ function Header() {
         href="https://fonts.googleapis.com/css?family=Antonio"
         rel="stylesheet"
       ></link>
-      <div className="header-left">
+      <div className="headerLeft">
         <a>
           <img src={logo} alt="Logo" id="logo" />
         </a>
       </div>
-      <div className="header-right">
+      <div className="headerRight">
         <a>
           <Link to="/" className="Home">
             Home

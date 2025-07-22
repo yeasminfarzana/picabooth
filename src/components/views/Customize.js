@@ -37,7 +37,7 @@ function Customize() {
   };
 
   return (
-    <div className="container3">
+    <div className="containerCustomize">
       <div ref={polaroidRef} className="polaroid">
         <img src={selectedFrame.image} className="frame"></img>
         <div className="pictures">
@@ -54,9 +54,9 @@ function Customize() {
           <img src={selectedSticker.image} className="sticker"></img>
         ) : null}
       </div>
-      <div className="scroll_menus">
+      <div className="scrollMenus">
         <p className="iconTitle">Filter</p>
-        <div className="scrollfilter">
+        <div className="optionsBar">
           {filter_options.map((filter) => (
             <a
               className="filterButton"
@@ -67,7 +67,7 @@ function Customize() {
           ))}
         </div>
         <p className="iconTitle">Frame</p>
-        <div className="scrollfilter">
+        <div className="optionsBar">
           {frame_images.map((frame) => (
             <a className="frameButton" onClick={() => handleFrame(frame)}>
               {frame.title}
@@ -76,7 +76,7 @@ function Customize() {
         </div>
 
         <p className="iconTitle">Sticker</p>
-        <div className="scrollfilter">
+        <div className="optionsBar">
           {frame_stickers.map((sticker) => (
             <a className="stickerButton" onClick={() => handleSticker(sticker)}>
               {sticker.title}

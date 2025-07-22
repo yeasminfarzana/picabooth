@@ -1,4 +1,4 @@
-.container5 {
+.containerContact {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-#contact_us {
+#contactUs {
   text-align: center;
 }
 
@@ -69,11 +69,11 @@ textarea {
   letter-spacing: 1px;
 }
 
-#input_message {
+#inputMessage {
   height: 50%;
 }
 
-#submit_button {
+#submitButton {
   height: 35px;
   width: 150px;
   background-color: black;

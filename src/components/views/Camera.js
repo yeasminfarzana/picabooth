@@ -22,7 +22,7 @@ function Camera() {
   };
 
   return (
-    <div className="container_camera">
+    <div className="containerCamera">
       <div className="border">
         <div className="camera">
           <CustomWebcam captureRequest={triggerCapture} />

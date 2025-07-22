@@ -37,12 +37,12 @@ a {
   font-family: "Antonio";
 }
 
-.header-right {
+.headerRight {
   display: flex;
   flex-direction: row;
 }
 
-.header-left a {
+.headerLeft a {
   display: flex;
   justify-content: flex-start;
   padding-top: 15px;

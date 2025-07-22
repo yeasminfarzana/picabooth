@@ -1,4 +1,4 @@
-.container3 {
+.containerCustomize {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -31,7 +31,7 @@
   margin-top: 23px;
 }
 
-.scrollfilter {
+.optionsBar {
   border: 2px solid rgb(99, 107, 149);
   border-color: rgb(99, 107, 149);
   border-width: 3px;
@@ -53,7 +53,7 @@
   scrollbar-width: thin;
 }*/
 
-.scroll_menus {
+.scrollMenus {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
