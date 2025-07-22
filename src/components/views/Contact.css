@@ -78,7 +78,6 @@ textarea {
   width: 150px;
   background-color: black;
   border-color: black;
-  margin: 20px;
   border-radius: 2rem;
   border-style: none;
   color: white;
@@ -88,6 +87,25 @@ textarea {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-  outline: none; /* Removes blue focus ring (optional) */
+  outline: none;
   cursor: pointer;
+}
+
+@media (max-width: 725px) {
+  .support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  form > label {
+    text-align: center;
+  }
 }

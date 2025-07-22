@@ -26,7 +26,7 @@ function Contact() {
             <input type="email" id="email" name="email" required></input>
             <label for="message_lab">Your Message</label>
             <textarea id="inputMessage" name="message" required></textarea>
-            <div className="sub_button">
+            <div className="subButton">
               <input type="submit" value="Submit" id="submitButton"></input>
             </div>
           </form>

@@ -1,7 +1,7 @@
 .containerCamera {
   display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   padding-top: 100px;
 }
 
@@ -50,4 +50,9 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 725px) {
+  .containerCamera {
+  }
 }
