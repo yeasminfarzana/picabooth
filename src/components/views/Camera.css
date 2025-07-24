@@ -53,6 +53,18 @@ video {
 }
 
 @media (max-width: 725px) {
-  .containerCamera {
+  .camera {
+    height: 185px;
+    width: 285px;
+  }
+
+  .border {
+    height: 250px;
+    width: 350px;
+  }
+
+  .camclick > button {
+    width: 100px;
+    height: 30px;
   }
 }

@@ -38,6 +38,9 @@ strong {
 form input,
 form textarea {
   width: 350px;
+  font-family: "Asap Symbol";
+  font-size: 20px;
+  border: 2px solid rgb(137, 143, 174);
 }
 
 #submitButton {
