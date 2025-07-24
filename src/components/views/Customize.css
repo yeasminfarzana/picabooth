@@ -94,3 +94,10 @@ div.scrollfilter a:hover {
   background-color: rgb(137, 143, 174);
   color: white;
 }
+
+@media (max-width: 725px) {
+  .containerCustomize {
+    flex-direction: column;
+    align-items: center;
+  }
+}

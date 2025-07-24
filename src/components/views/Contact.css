@@ -8,12 +8,15 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+
 .containerContact {
   padding: 40px;
 }
+
 h2 {
   padding: 0px;
 }
+
 .support {
   font-family: "Asap Symbol";
   display: flex;
@@ -21,16 +24,20 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
+
+strong {
+  font-size: 25px;
+}
+
 .textbox {
   width: 50%;
   text-align: center;
   padding: 40px;
 }
+
 form input,
 form textarea {
   width: 350px;
-}
-form textarea {
 }
 
 #submitButton {
@@ -47,6 +54,7 @@ form textarea {
   margin-top: 20px;
   cursor: pointer;
 }
+
 @media (max-width: 725px) {
   .support {
     flex-direction: column;
