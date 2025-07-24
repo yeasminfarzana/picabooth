@@ -39,3 +39,16 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
+
+.containerCamera {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  padding-top: 100px;
+}
+
+@media (max-width: 725px) {
+  .homePic {
+    width: 100%;
+  }
+}
