@@ -11,6 +11,7 @@
   display: grid;
   width: 290px;
   height: 740px;
+  pointer-events: none;
 }
 
 .frame,
@@ -19,12 +20,14 @@
   height: 740px;
   grid-area: 1/1;
   position: absolute;
+  pointer-events: none;
 }
 
 .picture {
   position: relative;
   margin-left: 35.6px;
   margin-bottom: 12px;
+  pointer-events: none;
 }
 
 .pictures {
@@ -63,7 +66,7 @@
   font-family: "Asap Symbol";
 }
 
-div.scrollfilter a:hover {
+div.optionsBar a:hover {
   background-color: rgb(99, 107, 149);
 }
 
