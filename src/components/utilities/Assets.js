@@ -6,6 +6,7 @@ import green from "../assets/frames/green.png";
 import orange from "../assets/frames/orange.png";
 import red from "../assets/frames/red.png";
 import violet from "../assets/frames/violet.png";
+import pink from "../assets/frames/pink.png";
 import white from "../assets/frames/white.png";
 import yellow from "../assets/frames/yellow.png";
 
@@ -22,6 +23,7 @@ export const frame_images = [
   { title: "Green", image: green },
   { title: "Blue", image: blue },
   { title: "Violet", image: violet },
+  { title: "Pink", image: pink },
   { title: "Black", image: black },
   { title: "White", image: white },
 ];
